@@ -1,6 +1,6 @@
-# conan-plog
+# conan-libevfibers
 
-Conan package for libeio library
+Conan package for libevfibers library
 
-http://software.schmorp.de/pkg/libeio.html
+https://github.com/Lupus/libevfibers
 
