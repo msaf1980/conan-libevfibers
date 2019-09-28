@@ -4,7 +4,7 @@ from conans import CMake, ConanFile, AutoToolsBuildEnvironment, tools
 
 
 class CxxoptsConan(ConanFile):
-    name = "evfibers"
+    name = "libevfibers"
     branch = "master"
     scn = "8f0a41927bf8c1b8a9c5a3adb254247303b50b17"
     version = "0.4.1-57-g8f0a419"
@@ -20,11 +20,11 @@ class CxxoptsConan(ConanFile):
 
     def source(self):
         self.run("git clone %s -b %s" % (self.url, self.branch))
-        self.run("cd lib%s && git reset --hard %s" % (self.name, self.scn))
+        self.run("cd %s && git reset --hard %s" % (self.name, self.scn))
 
     def build(self):
         cmake = CMake(self)
-        cmake.configure(source_folder="lib%s" % self.name)
+        cmake.configure(source_folder="%s" % self.name)
         cmake.build()
 
     def package(self):
