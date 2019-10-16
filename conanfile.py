@@ -6,8 +6,8 @@ from conans import CMake, ConanFile, AutoToolsBuildEnvironment, tools
 class CxxoptsConan(ConanFile):
     name = "libevfibers"
     branch = "master"
-    scn = "c2996d9939ae734bf0da936399f2111dd6c10ed5"
-    version = "0.4.1-59-gc2996d9"
+    scn = "d9ad92ca18a7c9ea813b9fcdea90a7dcf483a7b2"
+    version = "v0.4.1-60-gd9ad92c"
     license = "MIT"
     author = "Darlan Cavalcante Moreira (darcamo@gmail.com)"
     url = "https://github.com/Lupus/libevfibers"
